@@ -13,6 +13,10 @@ include "../infra/conn.php"
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1>
+            Registrar pedidos
+        </h1>
+    </header>
 </body>
 </html>

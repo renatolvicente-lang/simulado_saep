@@ -7,9 +7,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $email = $_POST["email"];
 
     $sql = "INSERT INTO funcionarios VALUES nome='$nome', email='$email'";
+    
 
-    if($conn->query($sql)){
-        $_SESSION["nome"] = $nome;
+    if($conn->query($sql) === TRUE){
+        $_SESSION["usuario"] = $nome;
         header("Location: home.php");
         exit();
     }else{
