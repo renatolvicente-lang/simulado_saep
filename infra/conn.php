@@ -4,10 +4,10 @@ $username = "root";
 $password = "";
 $database = "farmacia";
 
-$conn = new myslqi($localhost, $username, $password, $database);
+$conn = new mysqli($localhost, $username, $password, $database);
 
 if(!$conn){
-    die "erro ao tentar se conectar". $conn->mysqli_error();
+    die ("erro ao tentar se conectar". $conn->mysqli_error());
 }
 
 ?>

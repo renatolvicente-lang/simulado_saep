@@ -29,15 +29,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>Cadastra TU aqui</h1>
+    </header>
     <form action="" method="POST">
         <div>
             <label for="nome">Nome</label>
             <input type="text" name="nome" required>
         </div>
         <div>
-            <label for="email">Nome</label>
+            <label for="email">email</label>
             <input type="email" name="email" required>
         </div>
+        <button type="submit">enviar</button>
     </form>
 </body>
 </html>
